@@ -100,6 +100,8 @@
   page-break-inside: avoid; /*Firefox Compatibility*/
   width: 100%;
   text-align: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
   color: #818181;
   font-size: 4vw;
 }
