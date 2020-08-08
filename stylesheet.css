@@ -71,45 +71,10 @@
 }
 
 .width-segment  {
-  column-count: 2;
-  column-width: 300px; /*Half of mobile per column*/
-  background-color: #000;
-  padding: 1%;
-}
-
-@media only screen and (min-width: 600px) {
-  .width-segment-background {
-    background-image: url("Blue.jpg");
-    min-height : 40%;
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .width-segment-background  {
-    display: hidden;
-  }
-}
-
-.width-segment-child  {
-  break-inside: avoid-column;
-  page-break-inside: avoid; /*Firefox Compatibility*/
-  width: 100%;
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  color: #818181;
-  font-size: 4vw;
-}
-
-.bottom-border  {
-  border-bottom-style: solid;
-  border-color: red;
-  border-width: 2vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  flex-shrink: 1;
 }
 
 footer  {
@@ -137,7 +102,7 @@ footer  {
   width: 0;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: rgba(0,0,0,0.95);
   overflow-x: hidden;
 }
@@ -169,7 +134,7 @@ footer  {
 
 #desktop {
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   width: 0px;
   top: 0;
   right: 0;

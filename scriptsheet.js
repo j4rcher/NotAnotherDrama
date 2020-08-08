@@ -4,7 +4,7 @@ function openNav()  {
     document.getElementById("mobile").style.animation = "fade-in .5s forwards";
   } else {
     document.getElementById("desktop").style.animation = "slide-out .5s forwards";
-    document.getElementById("body").style.filter = "opacity(95%)";
+    document.getElementById("body").style.filter = "blur(2px)";
   }
 }
 
